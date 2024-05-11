@@ -1,14 +1,19 @@
 from flask import Flask
-from flask import jsonify
 import yfinance as yf
 import pandas as pd
 import plotly
 import plotly.express as px
-from datetime import datetime, timedelta
+from flask_cors import CORS, cross_origin
+
+
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 @app.route("/meta")
-def hello():
+@cross_origin()
+def meta():
     # Define the ticker symbol for META
     ticker = 'META'
     
