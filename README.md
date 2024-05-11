@@ -62,6 +62,12 @@ Go to the project directory
  ```python app.py ```
 
 
+## Documentation
+
+[Documentation](meta-platforms-inc-stock-price-manual.vercel.app)
+
+
+
 ## Authors
 
 - [@Oussama Souilmi](https://github.com/Oussama-soulmi/)
